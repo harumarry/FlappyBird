@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     {
         // 게임 시작하면 무조건 Ready 상태부터
         SetState(GameState.Ready);
+
+        Application.targetFrameRate = 60;
     }
 
     void Update()

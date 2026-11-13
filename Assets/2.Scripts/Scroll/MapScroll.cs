@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class MapScroll : MonoBehaviour
 {
@@ -30,14 +30,14 @@ public class MapScroll : MonoBehaviour
             transform.Translate(Vector2.left * speed * Time.deltaTime);
 
             // 배경
-            if (backGround1.position.x < -10)
+            if (backGround1.position.x <= -10.21f)
             {
-                backGround1.position = new Vector2(10, 0);
+                backGround1.position = new Vector2(10.21f, 0);
             }
 
-            if (backGround2.position.x < -10)
+            if (backGround2.position.x <= -10.21f)
             {
-                backGround2.position = new Vector2(10, 0);
+                backGround2.position = new Vector2(10.21f, 0);
             }
 
             // 지면
